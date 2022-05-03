@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App bg-orange-500">
-     
-      <h2>Shri krishnaya Namaha</h2>
+      <Navbar/>
     </div>
   );
 }
