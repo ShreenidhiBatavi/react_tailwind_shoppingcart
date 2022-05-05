@@ -1,15 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import { GlobalProvider } from './context/globalState';
-import Product from './components/Product';
+import Products from './components/Products';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import SingleProduct from './components/SingleProduct';
 function App() {
   return (
     <>
-    <GlobalProvider>
-       <Navbar/>
-       <Product/>
-    </GlobalProvider>
+      <GlobalProvider>
+        <div className='bg-gray-600'>
+          <Navbar />
+          <Router>
+            <Routes>
+              <Route path="/" element={<Products />} />
+              <Route path="/singleProduct" element={<SingleProduct />} />
+            </Routes>
+          </Router>
+
+
+        </div>
+      </GlobalProvider>
     </>
   );
 }
