@@ -11,7 +11,7 @@ const Product = ({product}) => {
     }
    return (
     <>
-       <div className='shadow-xl bg-white p-2 lg:mx-0 mx-12 rounded'>
+       <div className='shadow-xl bg-white p-2 lg:mx-0 mx-12 rounded-lg'>
             <img className='object-scale-down h-52 w-full mt-5' src={product.image}/>
             <h1 className='mt-2 p-4 font-bold'>{product.title}</h1>
             <h2 className=' p-4 font-bold'>Price  {product.price} RS</h2>
