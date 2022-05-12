@@ -14,7 +14,7 @@ const SingleProduct = () => {
         </div>
         <div className=' flex flex-col justify-start mt-12'>
           <h1 className='lg:text-2xl text-lg p-3'>{product.title}</h1>
-          <h2 className='lg:text-lg p-3'>category {product.category}</h2>
+          <h2 className='lg:text-lg p-3'>category :{product.category}</h2>
           <p className='lg:text-lg text-justify p-3'>
             {product.description}
           </p>
