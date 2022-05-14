@@ -8,7 +8,7 @@ const Cart = () => {
    return (
     <div>
         {cart.map((product)=>(
-            <div className='flex bg-orange-500 mt-28'>
+            <div className='flex bg-orange-500 mt-28 p-6'>
             <div>
                 <img className=' w-96 h-48 object-scale-down' src={product.image}/>
             </div>
