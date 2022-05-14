@@ -8,16 +8,16 @@ const Cart = () => {
    return (
     <div>
         {cart.map((product)=>(
-            <div className='flex'>
+            <div className='flex bg-orange-500 mt-28'>
             <div>
-                <img src={product.image}/>
+                <img className=' w-96 h-48 object-scale-down' src={product.image}/>
             </div>
-            <div>
-                <div>
+            <div className='bg-blue-300'>
+                <div className='text-black text-2xl'>
                     {product.title}
                 </div>
                 <div>
-                    {product.price}
+                    {product.price} Rs
                 </div>
             </div>
         </div>
