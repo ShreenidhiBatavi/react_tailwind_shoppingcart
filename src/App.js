@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <GlobalProvider>
-        <div className=' min-h-screen bg-gray-600'>
+        <div className=' min-h-screen bg-gray-600 relative'>
          
           <Router>
             <Navbar />
@@ -19,10 +19,13 @@ function App() {
               <Route path="/cart" element={<Cart/>}/>
             </Routes>
           </Router>
-
+            {/* <footer className='bg-gray-500 text-gray-300 flex justify-center items-center sticky w-full left-0 bottom-0'>
+              <h1>Made by shrinidhi</h1>
+            </footer> */}
 
         </div>
       </GlobalProvider>
+      
     </>
   );
 }
