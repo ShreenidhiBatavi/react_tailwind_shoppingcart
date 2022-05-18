@@ -7,11 +7,12 @@ const Product = ({product}) => {
     const {cart,setCart}=ContextProvider()
     
     const addToCart=(product)=>{
-        setCart([...cart,product])
+        setCart([...cart,{...product,Qty:1}])
     }
+
    return (
     <>
-       <div className='shadow-xl bg-white p-2 lg:mx-0 mx-12 rounded-lg'>
+       <div className='shadow-xl bg-white p-2 lg:mx-0 mx-12 rounded-lg lg:mt-5 mt-3'>
             <img className='object-scale-down h-52 w-full mt-5' src={product.image}/>
             <h1 className='mt-2 p-4 font-bold'>{product.title}</h1>
             <h2 className=' p-4 font-bold'>Price  {product.price} RS</h2>
